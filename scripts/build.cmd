@@ -44,6 +44,6 @@ git tag %version%
 
 echo Pushing to NuGet.org...
 
-%nuget% push %deploydir%\*.nupkg
+%nuget% push %deploydir%\*.nupkg -Source https://www.nuget.org/api/v2/package
 
 :exit
