@@ -6,7 +6,7 @@
     <title>Swindler</title>
     <authors>mookid8000</authors>
     <owners>mookid8000</owners>
-    <licenseUrl>https://raw.githubusercontent.com/rebus-org/Shtern/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/rebus-org/Swindler/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/rebus-org/Swindler</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>App.config test helper that can trick configuration manager into loading a custom App.config</description>
