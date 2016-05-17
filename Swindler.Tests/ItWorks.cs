@@ -1,5 +1,4 @@
-﻿using System;
-using System.Configuration;
+﻿using System.Configuration;
 using NUnit.Framework;
 
 namespace Swindler.Tests
@@ -10,8 +9,6 @@ namespace Swindler.Tests
         [Test]
         public void Yeah()
         {
-            Console.WriteLine($"AppDomain base directory: {AppDomain.CurrentDomain.BaseDirectory}");
-
             Assert.That(ConfigurationManager.AppSettings["4real"], Is.EqualTo("this values comes from the real app.config"));
             Assert.That(ConfigurationManager.AppSettings["fake"], Is.Null);
 
