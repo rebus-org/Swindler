@@ -10,6 +10,8 @@ and
 
     var dat = ConfigurationManager.ConnectionStrings["name"];
 
+## How to use it
+
 You can use it like this:
 
     using (AppConfig.Use("Fake.App.config"))
@@ -20,3 +22,8 @@ You can use it like this:
     }
 
 Remember to dispose it after use.
+
+## How to get started
+
+    Install-Package Swindler -ProjectName <your-project>
+
