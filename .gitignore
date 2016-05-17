@@ -21,3 +21,4 @@ _ReSharper.*
 _NCrunch_*
 *.user
 *.backup
+TestResult.xml
