@@ -28,7 +28,7 @@ if exist "%deploydir%" (
 
 echo Building version %version%
 
-msbuild %swindlerdir%\Swindler.csproj /p:Configuration=Release
+dotnet build %swindlerdir%\Swindler -c Release
 
 
 echo Packing...
@@ -36,7 +36,7 @@ echo Packing...
 echo Creating deploy dir %deploydir%
 mkdir %deploydir%
 
-%nuget% pack %swindlerdir%\Swindler.nuspec -OutputDirectory %deploydir% -Version %version%
+dotnet pack %swindlerdir%\Swindler -c Release -o %deploydir% -p:PackageVersion %version%
 
 echo Tagging...
 
@@ -44,6 +44,6 @@ git tag %version%
 
 echo Pushing to NuGet.org...
 
-%nuget% push %deploydir%\*.nupkg -Source https://api.nuget.org/v3/index.json
+%nuget% push %deploydir%\*.nupkg -Source https://nuget.org
 
 :exit
